@@ -1,16 +1,52 @@
-# React + Vite
+# DuAn-ChuyenDe1 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Giới thiệu:
+Ứng dụng cho phép quản trị viên:
+- Thêm / sửa / xóa sản phẩm
+- Xem danh sách sản phẩm
+- Quản lý dữ liệu thông qua giao diện web
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Vai trò: 
+- Kết nối API backend
+- Xử lý CRUD sản phẩm
+- Xử lý form, validate, loading, error
+- Deploy backend lên AWS
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Công nghệ sử dụng:
+### Frontend
+- ReactJS
+- Axios
+- HTML, CSS, JavaScript
 
-## Expanding the ESLint configuration
+### Backend
+- Python
+- AWS Lambda
+- AWS API Gateway
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+- DynamoDB
+
+### Deploy & Cloud
+- Amazon Web Services (AWS)
+
+---
+
+# Chức năng chính:
+- CRUD sản phẩm
+- Giao tiếp frontend – backend thông qua REST API
+- Lưu trữ dữ liệu trên DynamoDB
+- Deploy serverless bằng AWS Lambda
+
+---
+
+# Cách chạy project
+### Frontend
+- clone code về máy 
+- cd vào thư mục chuyende1 
+- chạy npm i
+- chạy npm run dev 
+- click vào đường dẫn local
