@@ -1,52 +1,85 @@
-# DuAn-ChuyenDe1 
+# DuAn-ChuyenDe1 - E-commerce Product Management Website
 
-# Giới thiệu:
-Ứng dụng cho phép quản trị viên:
-- Thêm / sửa / xóa sản phẩm
-- Xem danh sách sản phẩm
-- Quản lý dữ liệu thông qua giao diện web
+A React-based e-commerce web application with an admin dashboard for managing products.  
+The project connects to a serverless backend deployed on AWS and stores product data in DynamoDB.
 
----
+## Overview
 
-# Vai trò: 
-- Kết nối API backend
-- Xử lý CRUD sản phẩm
-- Xử lý form, validate, loading, error
-- Deploy backend lên AWS
+This project was built as a web application for displaying and managing product data through a clean user interface.  
+It includes both a customer-facing homepage and an admin management area for handling product CRUD operations.
 
----
+The main goal of this project is to practice building a real-world web application with React, REST API integration, cloud deployment, and database-driven product management.
 
-# Công nghệ sử dụng:
+## Features
+
+### User Interface
+
+- Product homepage layout
+- Banner section
+- Product collection section
+- Policy section
+- Footer and navigation components
+- Responsive layout with React components
+
+### Admin Dashboard
+
+- View product list
+- Create new products
+- Update existing products
+- Delete products
+- Validate admin access using local storage token and role
+- Manage product state after API actions
+
+### API Integration
+
+- Fetch product data from AWS API Gateway
+- Send product create/update/delete requests to backend API
+- Map DynamoDB product data into frontend-friendly format
+- Handle API loading and error cases
+
+## Tech Stack
+
 ### Frontend
-- ReactJS
-- Axios
-- HTML, CSS, JavaScript
 
-### Backend
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- CSS
+- React Router DOM
+- Axios / Fetch API
+- React Icons
+- Font Awesome
+- Lucide React
+- Swiper
+
+### Backend & Cloud
+
 - Python
 - AWS Lambda
 - AWS API Gateway
-
-### Database
 - DynamoDB
 
-### Deploy & Cloud
-- Amazon Web Services (AWS)
+## Project Structure
 
----
-
-# Chức năng chính:
-- CRUD sản phẩm
-- Giao tiếp frontend – backend thông qua REST API
-- Lưu trữ dữ liệu trên DynamoDB
-- Deploy serverless bằng AWS Lambda
-
----
-
-# Cách chạy project
-### Frontend
-- clone code về máy 
-- cd vào thư mục chuyende1 
-- chạy npm i
-- chạy npm run dev 
-- click vào đường dẫn local
+```bash
+DuAn-ChuyenDe1/
+├── public/
+├── src/
+│   ├── admin/
+│   │   ├── components/
+│   │   ├── AdminPage.jsx
+│   │   └── CartAdmin.jsx
+│   ├── assets/
+│   ├── components/
+│   ├── css/
+│   ├── data/
+│   ├── services/
+│   │   └── productApi.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md
