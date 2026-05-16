@@ -1,85 +1,134 @@
-# DuAn-ChuyenDe1 - E-commerce Product Management Website
+<div align="center">
 
-A React-based e-commerce web application with an admin dashboard for managing products.  
-The project connects to a serverless backend deployed on AWS and stores product data in DynamoDB.
+# 🛍️ ChuyenDe1 - Fashion E-commerce Website
 
-## Overview
+A modern **fashion e-commerce website** built with **ReactJS, Vite, TailwindCSS, AWS Lambda, API Gateway, and DynamoDB**.
 
-This project was built as a web application for displaying and managing product data through a clean user interface.  
-It includes both a customer-facing homepage and an admin management area for handling product CRUD operations.
+This project includes product listing, product detail, cart, checkout, authentication, and an admin dashboard for product management.
 
-The main goal of this project is to practice building a real-world web application with React, REST API integration, cloud deployment, and database-driven product management.
+<br />
 
-## Features
+![React](https://img.shields.io/badge/ReactJS-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS_Lambda-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
 
-### User Interface
+</div>
 
-- Product homepage layout
-- Banner section
-- Product collection section
-- Policy section
-- Footer and navigation components
-- Responsive layout with React components
+---
 
-### Admin Dashboard
+## 📌 Overview
 
-- View product list
-- Create new products
-- Update existing products
-- Delete products
-- Validate admin access using local storage token and role
-- Manage product state after API actions
+**ChuyenDe1** is a frontend e-commerce project for selling fashion products such as clothes, shoes, watches, and accessories.
 
-### API Integration
+The project focuses on building a real shopping website interface with:
 
-- Fetch product data from AWS API Gateway
-- Send product create/update/delete requests to backend API
-- Map DynamoDB product data into frontend-friendly format
-- Handle API loading and error cases
+- Product category pages
+- Product detail page
+- Shopping cart
+- Checkout page
+- Login / Register
+- Admin product management
+- REST API integration
+- AWS serverless backend connection
 
-## Tech Stack
+This project was developed as a practical school project to improve frontend development skills and understand how a React application communicates with backend APIs.
 
-### Frontend
+---
 
-- React
-- Vite
-- JavaScript
-- Tailwind CSS
-- CSS
-- React Router DOM
-- Axios / Fetch API
-- React Icons
-- Font Awesome
-- Lucide React
-- Swiper
+## ✨ Features
 
-### Backend & Cloud
+### 🏠 User Side
 
-- Python
-- AWS Lambda
-- AWS API Gateway
-- DynamoDB
+- 🛍️ View product categories
+- 🔍 Filter products by price, size, and brand
+- 📄 View product detail
+- 🛒 Add products to cart
+- ➕ Increase / decrease product quantity
+- ❌ Remove products from cart
+- 💰 Calculate total cart price
+- 📦 Checkout page
+- 🔐 Login / Register account
+- 📱 Responsive layout for desktop and mobile
 
-## Project Structure
+---
+
+### 🛠️ Admin Side
+
+- 📊 Admin dashboard
+- 📦 View product list
+- ➕ Create new product
+- ✏️ Edit product information
+- 🗑️ Delete product
+- 🔍 Search products
+- 🧩 Filter products by category and subcategory
+- 🔐 Role-based admin access using token and role from localStorage
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | ReactJS, Vite, JavaScript |
+| Styling | TailwindCSS, CSS |
+| Routing | React Router DOM |
+| API Client | Axios, Fetch API |
+| Icons | Heroicons, FontAwesome, Lucide React, React Icons |
+| Slider | Swiper |
+| Backend | AWS Lambda |
+| API | AWS API Gateway |
+| Database | Amazon DynamoDB |
+| Storage | LocalStorage |
+
+---
+
+## 📁 Folder Structure
 
 ```bash
 DuAn-ChuyenDe1/
+│
 ├── public/
+│
 ├── src/
 │   ├── admin/
 │   │   ├── components/
 │   │   ├── AdminPage.jsx
 │   │   └── CartAdmin.jsx
+│   │
 │   ├── assets/
+│   │
 │   ├── components/
+│   │   ├── Banner.jsx
+│   │   ├── BrandFilter.jsx
+│   │   ├── Breadcrumb.jsx
+│   │   ├── CartPage.jsx
+│   │   ├── CheckoutPage.jsx
+│   │   ├── Detail.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Login.jsx
+│   │   ├── NavigationMenu.jsx
+│   │   ├── PriceFilter.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductList.jsx
+│   │   ├── ProductPage.jsx
+│   │   ├── Register.jsx
+│   │   ├── SizeFilter.jsx
+│   │   └── ...
+│   │
 │   ├── css/
 │   ├── data/
 │   ├── services/
 │   │   └── productApi.js
+│   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── index.css
+│
+├── index.html
 ├── package.json
-├── vite.config.js
 ├── tailwind.config.js
+├── vite.config.js
 └── README.md
